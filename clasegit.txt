@@ -1,0 +1,32 @@
+Comandos basicos:
+git clone <URL> permite bajar la carpeta del respositorio al directorio actual
+git add <nombre> Permite aniadir archivos a un proyecto de git
+git status : indica las ultimas modificaciones sobre el repositorio
+git commit -m 'Comentario' : permite aniadir una rama y el comentario sirve para exlpicar que tiene de nuevo la 'version' creada. EL flag -m sirve para agregar directamente el comentario.
+
+//Pares add/commit
+
+Los cambios se pueden hacer sobre el repositorio remoto pero no es recomendado.
+
+*git fetch: Busca informacion en el repositorio remoto y la compara con la del repositorio local.
+*git pull: Permite traer del repositorio remoto los cambios hechos desde el mismo, al repositorio actual. 
+
+Es recomendable hacer commits cada vez que se hagan cambios sin importar que tan pequenios parezcan.
+
+*git log: Muestra una lista de los commits 
+*git checkout commitcode: permite modificar la posicion de mi HEAD en mi rama actual de commits y del mismo modo modificar la rama de mi proyecto en donde estoy. // OJO: No moverse de ramas de donde no se hayan guardado los cambios. 
+**origin: Nombre estandar del repositorio remoto. 
+**origin/master: nombre estandar del respositorio local .. creo.
+
+*git reset HEAD~n: permite eliminar el commit realizado hasta la n-esima posicion desde HEAD pero no elimina los cambios realizados, es decir, estos permanecen en el respositorio local.
+
+*git branch: Enlista las ramas existentes y seniala la actual con un *.
+
+*git push -u origin branch_name: permite actualizar los cambios realizados en las ramas creadas desde nuestro lr hacia el rr.
+
+*git merge branch_name: Fusiona la rama senialada con la rama actual.
+**Conflictos al hacer merge: Se edita el mismo archivo en 
+
+*git log --graph --all: permite mostrar un 'grafo' de todos los commits de cada una de las ramas.
+
+*
